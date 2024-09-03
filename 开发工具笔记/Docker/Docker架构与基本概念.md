@@ -12,7 +12,7 @@ Docker 容器通过 Docker 镜像来创建。
 容器与镜像的关系类似于面向对象编程中的对象与类。
 
 | 概念                    | 说明 |
-| ---------------------  | ----------- |
+| :---------------------:  | :----------- |
 | Docker 镜像(Images)     | Docker 镜像是用于创建 Docker 容器的模板，比如Ubuntu系统。|
 | Docker 容器(Container)  | 容器是独立运行的一个或一组应用，是镜像运行时的实体。|
 | Docker 客户端(Client)   | Docker 客户端通过命令行或者其他工具使用 Docker SDK (https://docs.docker.com/develop/sdk/) 与 Docker 的守护进程通信。|
