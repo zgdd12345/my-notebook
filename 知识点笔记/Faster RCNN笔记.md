@@ -20,7 +20,7 @@ Intersection over Union 是一种测量在特定数据集中检测相应物体�
 
 即，该标准用于测量真实范围和预测结果之间的相关度，相关度越高，该值越高。
 
-<img src="C:\Users\Administrator\Desktop\笔记\image\IOU.png" style="zoom:25%;" />
+<img src="img\IOU.png" style="zoom:25%;" />
 
 ## Faster RCNN思想
 
