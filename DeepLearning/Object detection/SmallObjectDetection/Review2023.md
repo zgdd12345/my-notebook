@@ -48,8 +48,12 @@
 # 2.3 小目标检测算法回顾
 - 面向数据的方法。（Sample-oriented methods）增加小物体的数量，过采样和自动增强方案。
 - 尺度感知方法。（Scale-aware methods）利用多尺度特征以分而治之的方式检测各种尺寸的物体，设计适合多尺度物体有效训练的方案。
-- 特征融合方法。（Feature-imitation methods）自顶向下的信息交互和精细特征融合。
-- 超分。（Focus-and-detect methods）基于学习的上采样和基于GAN的超分辨率框架。
+  - 特定尺度检测
+  - 层次特征融合
+- 基于注意力的方法（Attention-based methods）
+- 特征模仿方法。（Feature-imitation methods）自顶向下的信息交互和精细特征融合。
+  - 基于相似度学习的方法
+  - 超分。（Focus-and-detect methods）基于学习的上采样和基于GAN的超分辨率框架。
 - 上下文建模方法。（Context-modeling methods）
 - 其他。(Attention-based methods)基于注意力的方法和定位驱动优化。
 
