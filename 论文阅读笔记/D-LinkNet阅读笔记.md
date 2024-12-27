@@ -9,7 +9,7 @@ Resolution Satellite Imagery Road Extraction
 
 **1.3 刊物：**CVPR2018
 
-**1.4 链接：**https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Zhou_D-LinkNet_LinkNet_With_CVPR_2018_paper.pdf
+**1.4 链接：** https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w4/Zhou_D-LinkNet_LinkNet_With_CVPR_2018_paper.pdf
 
 ## 2 Abstract、Introduction and Conclusion
 
