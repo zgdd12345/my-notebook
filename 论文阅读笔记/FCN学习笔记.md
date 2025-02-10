@@ -26,17 +26,17 @@
 
 网络结构详图。输入可为任意尺寸图像彩色图像；输出与输入尺寸相同，深度为：20类目标+背景=21。 
 
-![FCN4](C:\Users\Administrator\Desktop\笔记\论文阅读笔记\source\FCN4.png)
+![FCN4](source/FCN4.png)
 
 ### 3.全卷积网络
 
 FCN对图像进行像素级分类，从而解决语义级别的图像分割（semantic segmentation）问题。与经典的CNN在卷积层之后使用全连接层得到固定长度的特征向量进行分类（全联接层＋softmax输出）不同，FCN可以接受任意尺寸的输入图像，采用反卷积层对最后一个卷积层的feature map进行上采样, 使它恢复到输入图像相同的尺寸，从而可以对每个像素都产生了一个预测, 同时保留了原始输入图像中的空间信息, 最后在上采样的特征图上进行逐像素分类。
 
-<img src="C:\Users\Administrator\Desktop\笔记\论文阅读笔记\source\FCN2.jpg" alt="FCN2" style="zoom:50%;" />
+<img src="source/FCN2.jpg" alt="FCN2" style="zoom:50%;" />
 
 最后逐个像素计算softmax分类的损失, 相当于每一个像素对应一个训练样本。下图是Longjon用于语义分割所采用的全卷积网络(FCN)的结构示意图：
 
-![FCN结构](C:\Users\Administrator\Desktop\笔记\论文阅读笔记\source\FCN结构.jpg)
+![FCN结构](source/FCN结构.jpg)
 
 简单的来说，FCN与CNN的区域在把于CNN最后的全连接层换成卷积层，输出的是一张已经Label好的图片。
 
