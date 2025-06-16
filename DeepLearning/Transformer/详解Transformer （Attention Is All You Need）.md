@@ -1,4 +1,3 @@
-# 详解Transformer （Attention Is All You Need）
 
 ## 0. 前言
 
