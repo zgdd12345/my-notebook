@@ -1,7 +1,7 @@
 
 # 工作任务
 - [ ] 缺陷检测 #缺陷检测
-	- [ ] 上海出差🔺 🛫 2025-06-23 📅 2025-06-27 
+	- [ ] 上海出差 🔺 🛫 2025-06-23 📅 2025-06-27
 	- [ ] 
 - [ ] 撒布实验🔺  #撒布实验 
 	- [ ] 
@@ -17,4 +17,12 @@
 # Learning
 - [ ] LLaMa Factory #LLM
 - [ ] Huggingface PEFT #LLM
-- [ ] 
+
+
+[](obsidian://open?vault=my-notebook&file=Excalidraw%2FDrawing%202025-06-19%2020.13.36.excalidraw)
+
+obsidian://open?vault=my-notebook&file=Excalidraw%2FDrawing%202025-06-19%2020.13.36.excalidraw
+
+
+
+
