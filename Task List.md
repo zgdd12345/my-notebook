@@ -7,21 +7,21 @@
 	- [ ] 
 - [ ] isQCoder 🔼  #isQCoder #LLM 
 - [ ] 求解器🔼 
-
+---
 # Paper
 
 - [ ] isQCoder PEFT #isQCoder #LLM 
 	- [ ] 🔼 数据集制作🛫 2025-06-16 
 	- [ ] 🔼 训练代码
-
+---
 # Learning
 - [ ] LLaMa Factory #LLM
 - [ ] Huggingface PEFT #LLM
 
+---
 
-<<<<<<< HEAD
 ![[Drawing 2025-06-19 20.30.45.excalidraw]]
-=======
+
 ![[Drawing 2025-06-19 20.36.02.excalidraw]]
 >>>>>>> origin/master
 
