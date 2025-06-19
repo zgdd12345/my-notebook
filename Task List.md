@@ -19,7 +19,11 @@
 - [ ] Huggingface PEFT #LLM
 
 
+<<<<<<< HEAD
 ![[Drawing 2025-06-19 20.30.45.excalidraw]]
+=======
+![[Drawing 2025-06-19 20.36.02.excalidraw]]
+>>>>>>> origin/master
 
 
 
