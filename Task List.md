@@ -17,4 +17,9 @@
 # Learning
 - [ ] LLaMa Factory #LLM
 - [ ] Huggingface PEFT #LLM
-- [ ] 
+
+
+![[Drawing 2025-06-19 20.36.02.excalidraw]]
+
+
+
