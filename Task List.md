@@ -19,10 +19,7 @@
 - [ ] Huggingface PEFT #LLM
 
 
-[](obsidian://open?vault=my-notebook&file=Excalidraw%2FDrawing%202025-06-19%2020.13.36.excalidraw)
-
-obsidian://open?vault=my-notebook&file=Excalidraw%2FDrawing%202025-06-19%2020.13.36.excalidraw
-
+![[Drawing 2025-06-19 20.30.45.excalidraw]]
 
 
 
