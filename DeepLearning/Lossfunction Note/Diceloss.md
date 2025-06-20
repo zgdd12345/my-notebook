@@ -12,7 +12,7 @@ Laplace smoothing:
 
 Laplace smoothing 是一个可选改动，即将分子分母全部加 1：
 
-<img src="img/dice laplace.png" alt="图片alt"  width="20%" div align=center>
+<img src="img/dice laplace.png" alt="图片alt"  width="40%" div align=center>
 
 带来的好处：
 （1）避免当|X|和|Y|都为0时，分子被0除的问题
