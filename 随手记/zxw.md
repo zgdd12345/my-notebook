@@ -1,6 +1,8 @@
 ---
-created: ["{{date}} {{time}}"]
-tags: ["#List/"]
+created:
+  - "{{date}} {{time}}"
+tags:
+  - "#List/"
 ---
  # 💠 Task List
 ## 🔴 劳动监察
