@@ -187,7 +187,8 @@ Window Attention是这篇文章的关键。传统的Transformer都是**基于全
 
 公式如下：
 
-![[公式]](https://www.zhihu.com/equation?tex=Attention%28Q%2C+K%2C+V%29+%3D+Softmax%28%5Cfrac%7BQK%5ET%7D%7B%5Csqrt%7Bd%7D%7D%2BB%29V+%5C%5C)
+<img src="https://www.zhihu.com/equation?tex=Attention%28Q%2C+K%2C+V%29+%3D+Softmax%28%5Cfrac%7BQK%5ET%7D%7B%5Csqrt%7Bd%7D%7D%2BB%29V+%5C%5C" alt="img" style="zoom:120%;" />
+
 
 主要区别是在原始计算Attention的公式中的Q,K时**加入了相对位置编码**。后续实验有证明相对位置编码的加入提升了模型性能。
 
