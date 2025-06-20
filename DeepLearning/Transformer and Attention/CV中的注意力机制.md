@@ -109,6 +109,6 @@
 
 ​		DANet来自于CVPR 2019的文章Dual Attention Network for Scene Segmentation，注意思想也是参考了上述提到的CBAM 和Non-local 的融合变形。具体来说就是，结构框架使用的是CBAM，具体方法使用的是self-attention。
 
-![DANet](./src/DANet.png)
+![DANet](src/DANet.png)
 
 ​		上图所示是DANet注意力模块的基本结构，主要包括Position Attention Module 和 Channel Attention Module。两个模块使用的方法都是self-attention，只是作用的位置不同，一个是空间域的self-attention，一个是通道域的self-attention。这样做的好处是：在CBAM 分别进行空间和通道self-attention的思想上，直接使用了non-local 的自相关矩阵Matmul 的形式进行运算，避免了CBAM 手工设计pooling，多层感知器等复杂操作。同时，把Self-attention的思想用在图像分割，可通过long-range上下文关系更好地做到精准分割。
