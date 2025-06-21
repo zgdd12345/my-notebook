@@ -18,15 +18,4 @@
 - [ ] LLaMa Factory #LLM
 - [ ] Huggingface PEFT #LLM
 
----
-
-
-
-
-![[Drawing 2025-06-19 20.30.45.excalidraw]]
-
-![[Drawing 2025-06-19 20.36.02.excalidraw]]
->>>>>>> origin/master
-
-
-
+---https://github.com/windingwind/zotero-better-notes/discussions/771
