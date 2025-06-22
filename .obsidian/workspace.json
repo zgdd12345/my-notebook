@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5d80d47a54531d43",
+        "id": "7ce9a2269966dc74",
         "type": "tabs",
         "children": [
           {
-            "id": "30f6cc3e49852efa",
+            "id": "f3d03d9102efd72c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -205,12 +205,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9733e50898be5f65",
+  "active": "f3d03d9102efd72c",
   "lastOpenFiles": [
-    "Quant/Backtrader/src/line.png",
     "Quant/Backtrader/Backtrader.md",
-    "Quant/Backtrader/src",
     "Quant/Quant Platform Development/个人量化平台开发.md",
+    "Quant/Backtrader/src/line.png",
+    "Quant/Backtrader/src",
     "Quant/量化策略研究笔记/网格策略研究笔记.md",
     "Quant/量化策略研究笔记",
     "Quant/Backtrader",
