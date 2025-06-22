@@ -1,4 +1,8 @@
 # my ignore
+.obsidian
+.obsidian/workspace.json
+.obsidian/app.json
+.obsidian/plugins/obsidian-git/data.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
