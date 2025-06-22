@@ -1,4 +1,4 @@
-## 1.  基本概念
+# 1.  基本概念
 1. Line：是Backtrader系统中最重要的对象。Line本意是一连串的可以连接在一起的点，所有可以在坐标上形成一条线的数据就称为Line。 在量化投资领域，通常是指open、high、low、close、volume。除了数据本身可以形成Line之外，对数据进行处理后形成的数据也可以作为Line，比如计算close列的移动平均线，也可以形成一个Line。
 2. Index 为0的理解：
 	Backtrader系统中，对Line数据是逐行处理的：
@@ -11,20 +11,19 @@
 3. Bar：
 这种方法的好处就是无需知道已经处理了多少行（在Backtrader中，统一将行称之为Bar），也无需知道还有多少Bar需要处理，因为0唯一确定了系统正在处理的数据（Bar）。
 
-
 在backtrader中，重写了len函数，返回的是已经处理过数据行（也就是Bar）。
 
-## 2. 一些重要概念
-### 2.1 数据源（data feed）
-#### 2.1.1数据源的传递
-- 数据源是以[数组](https://so.csdn.net/so/search?q=%E6%95%B0%E7%BB%84&spm=1001.2101.3001.7020)的形式或者对数组的快捷访问的方式提供给strategy（策略）作为成员变量使用。
-- strategy这个类里面有个成员变量datas是个数组，用于存储数据源。数据源按照加入的先后顺序保存在datas中。策略在执行过程，会使用这些数据。
+# 2. 一些重要概念
+## 2.1 数据源（data feed）
+### 2.1.1数据源的传递
+- 数据源是以***数组***的形式或者***对数组的快捷访问***的方式提供给strategy（策略）作为**成员变量**使用。
+ - strategy这个类里面有个成员变量datas是个数组，用于存储数据源。数据源按照加入的先后顺序保存在datas中。策略在执行过程，会使用这些数据。 
 - 访问数据源可以通过访问数组的方式，或者对数组的快捷方式访问。
 - datas[0].close就是数组访问方式，self.data0.close就是快捷访问方式，两者保存的数据完全一样
-strategy的__init__没有输入参数（除了self自身），我们的数组只是加入到cerebro中，它怎么就能直接使用datas数组了呢？这个是backtrader自身框架处理的，也就是，系统加入的数据源会按照加入的顺序自动呈现到strategy内部的data变量上，大家只需要知道如何使用即可。注意，与此类似的还要Indicators。
+strategy的__init__没有输入参数（除了self自身），我们的数组只是加入到cerebro中，它怎么就能直接使用datas数组了呢？这个是backtrader自身框架处理的，也就是，==系统加入的数据源会按照加入的顺序自动呈现到strategy内部的data变量上==，大家只需要知道如何使用即可。注意，与此类似的还要Indicators。
 
-数据源的快捷访问
-上一节已经说明，这里总结下，对数据源的快捷访问方式如下：
+**数据源的快捷访问：**
+上一节已经说明，这里总结下，对==数据源的快捷访问方式==如下：
 * self.data 等价self.datas[0]
 * self.dataX 等价 self.datas[X]
 示例如下：
@@ -34,7 +33,7 @@ class MyStrategy(bt.Strategy):
     def __init__(self):
         sma = btind.SimpleMovingAverage(self.data, period=self.params.period)
 ```
-数据源的缺省访问
+==数据源的缺省访问==
 如果只有一个数据源，你甚至都不用显式指定，系统会缺省使用self.datas[0]，也就是第一个加入的数据源，示例：
 ```
 class MyStrategy(bt.Strategy):
@@ -42,11 +41,11 @@ class MyStrategy(bt.Strategy):
     def __init__(self):
         sma = btind.SimpleMovingAverage(period=self.params.period)
 ```
-调用SimpleMovingAverage的时候完全就丢掉self.data了。这种情况下，Indicator（本例中就是SimpleMovingAverage）会使用策略创建时输入的第一个数据，就是self.data (或者self.data0 或者self.datas[0]，哥仨是一个意思])
+调用SimpleMovingAverage的时候完全就丢掉self.data了。这种情况下， **Indicator（本例中就是SimpleMovingAverage）会使用策略创建时输入的第一个数据，就是self.data (或者self.data0 或者self.datas[0]，哥仨是一个意思])**
 
 #### 2.1.2万物皆为数据源
-在backtrader中，不仅仅输入的数据是数据源，任何indicator（指标）以及任何对输入数据的操作（加，减，比较，求和，求平均... ）结果均可称为数据源。上一个例子中SimpleMovingAverage对self.datas[0]进行求平均，其结果sma就是一个新的数据源。如下例子，展示了作为数据源的指标以及操作结果
-```
+在backtrader中，不仅仅输入的数据是数据源，==任何indicator（指标）以及任何对输入数据的操作（加，减，比较，求和，求平均... ）结果均可称为数据源。==上一个例子中SimpleMovingAverage对self.datas[0]进行求平均，其结果sma就是一个新的数据源。如下例子，展示了作为数据源的指标以及操作结果
+``` python
 class MyStrategy(bt.Strategy):
     params = dict(period1=20, period2=25, period3=10, period4)
     def __init__(self):
@@ -73,14 +72,14 @@ class MyStrategy(bt.Strategy):
 之前的实例中我们已经提供了参数的使用方法，下面看看使用元组（包含元组）以及字典方式的不同之处。
 
 使用元组实例：
-```
+``` python
 class MyStrategy(bt.Strategy):
     params = (('period', 20),)
     def __init__(self):
         sma = btind.SimpleMovingAverage(self.data, period=self.p.period)
 ```
 使用字典的实例：
-```
+``` python
 class MyStrategy(bt.Strategy):
     params = dict(period=20)
     def __init__(self):
@@ -197,3 +196,22 @@ myslice = self.my_sma.get(ago=0, size=1)  #这个函数的缺省值为（0,1）
 ```
 myslice = self.my_sma.get(ago=-1, size=10)
 ```
+
+
+### 2.3.5 延迟索引
+
+### 2.3.6Lines的耦合
+
+### 2.3.7 操作符
+
+
+# 3. 平台的使用
+## 3.1 Line迭代器
+## 3.2 Indicators的额外方法
+## 3.3 最小周期（Minimum Period）
+## 3.4 启动和运行
+## 3.5 数据源（data Feed）
+## 3.6 继承的strategy类
+## 3.7 Cereebro
+
+## 
