@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Task List.md",
+                "file": "Quant/Backtrader/Backtrader.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Task List"
+              "title": "Backtrader"
             }
           }
         ]
@@ -205,14 +205,25 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "30f6cc3e49852efa",
+  "active": "9733e50898be5f65",
   "lastOpenFiles": [
-    "随手记/未命名.md",
+    "Quant/Backtrader/src/line.png",
+    "Quant/Backtrader/Backtrader.md",
+    "Quant/Backtrader/src",
+    "Quant/Quant Platform Development/个人量化平台开发.md",
+    "Quant/量化策略研究笔记/网格策略研究笔记.md",
+    "Quant/量化策略研究笔记",
+    "Quant/Backtrader",
     "Task List.md",
+    "Quant/Quant Platform Development",
+    "Quant",
+    "Template/论文阅读笔记模板.md",
+    "LiteratureNotes/jakobPybind11Documentation.md",
+    "Computer Science",
+    "随手记/未命名.md",
     "随手记/zxw.md",
     "随手记/SmallObjectDetection.md",
     "随手记",
-    "Template/论文阅读笔记模板.md",
     "DeepLearning/NewStructure/Mamba.md",
     "Ideal/SmallObjectDetection.md",
     "Pasted image 20250427161232.png",
@@ -230,20 +241,9 @@
     "Template/Templates/09 - Book Notes/llzektorll-BookNotes-0.md",
     "Template/Templates/08 - Decision Making Notes/llzektorll-DecisionMaking-0.md",
     "Template/Templates/07 - Course Notes/llzektorll-CourseNotes-2.md",
-    "Template/Templates/07 - Course Notes/llzektorll-CourseNotes-1.md",
-    "Template/Templates/07 - Course Notes/llzektorll-CourseNotes-0.md",
-    "Template/Templates/05 - Projects Notes/llzektorll-Project-1.md",
-    "Template/Templates/06 - Action Plan Notes/llzektorll-ActionPlan-0.md",
-    "Template/Templates/05 - Projects Notes/llzektorll-Project-0.md",
     "Template/Templates/17 - Traking Notes",
     "Template/Templates/19 - Company Notes",
     "Template/Templates/20 - MOC Note",
-    "Template/Templates/18 - Habits Notes",
-    "Template/Templates/16 - Meeting Notes",
-    "Template/Templates/14 - Application Notes",
-    "Template/Templates/15 - Contact Notes",
-    "Template/Templates/13 - TV Show Notes",
-    "Template/Templates/12 - Recipes Notes",
     "DeepLearning/知识点笔记/img/RANSAC.jpg",
     "DeepLearning/知识点笔记/img/MHA.jpg",
     "DeepLearning/知识点笔记/img/attention.jpg",
@@ -251,7 +251,6 @@
     "DeepLearning/Transformer and Attention/src/transformer_atten.png",
     "DeepLearning/Transformer and Attention/src/Self-Attention.png",
     "DeepLearning/Transformer and Attention/src/SKNet.png",
-    "DeepLearning/Transformer and Attention/src/SENet1.png",
-    "DeepLearning/Transformer and Attention/src/Pasted image 20250427161233.png"
+    "DeepLearning/Transformer and Attention/src/SENet1.png"
   ]
 }
