@@ -4,6 +4,7 @@
 .obsidian/app.json
 .obsidian/plugins/obsidian-git/data.json
 .obsidian/**/*.json  # 忽略所有插件配置
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
