@@ -11,7 +11,6 @@ Zhaopeng Gu, Bingke Zhu, Guibo Zhu, Yingying Chen, Ming Tang, Jinqiao Wang
 
 Foundation Model Research Center, Institute of Automation, Chinese Academy of Sciences, Beijing, China 
 
-
 # 0. Abstract
 1. 由于大量的训练数据，现有大模型有很强的图像理解能力，在常见对象识别上表现优异，但是其缺乏特定领域的知识，并且对对象内的局部细节的理解较弱，这阻碍了它们在工业异常检测（IAD， Industr Anomaly Detection）任务中的应用。
 2. 该文探索利用LVLM来解决IAD问题，并提出一种基于LVLM的新型 IAD方法AnomalyGPT。

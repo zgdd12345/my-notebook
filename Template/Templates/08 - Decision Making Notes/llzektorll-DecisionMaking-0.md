@@ -1,6 +1,7 @@
 ---
-created: ["{{date}} {{time}}"]
-tags: ["#Evaluation/"]
+created:
+  - "{{date}} {{time}}"
+tags: []
 ---
 # ❓ Your Questions is
 - Brief description of the query.

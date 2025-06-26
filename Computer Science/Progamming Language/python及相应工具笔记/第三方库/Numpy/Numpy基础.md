@@ -304,7 +304,7 @@ print (a[...,1:])  # 第2列及剩下的所有元素
 
 ## 切片和索引之冒号、逗号与省略号使用详解
 ### 冒号使用详解
-<font style="color:rgb(18, 18, 18);">seq[start:end:step] #从start开始到end结束，每隔step输出一次</font>
+<font style="color:rgb(18, 18, 18);">seq[start:end:step] # 从start开始到end结束，每隔step输出一次</font>
 
 <font style="color:rgb(18, 18, 18);">::将start和end省略意味着从开始到结束，省略谁就是采用默认。</font>
 
