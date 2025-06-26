@@ -3,16 +3,13 @@
 ```python
 import os
 
-def generate_tree(path, indent='', deep=0, suffix=['os', 'jpg', 'png', 'DS_Store']):
+def generate_tree(path, indent='', deep=0):
     print(indent + os.path.basename(path))
-
+	exclusion_list = ['.ipynb_checkpoints', '__pycache__', '.git', '.DS_Store', '.obsidian']
+	suffix = ['os', 'jpg', 'png']
     if os.path.isdir(path):
         for item in os.listdir(path):
-            if item == '.ipynb_checkpoints':
-                continue
-            elif item == '__pycache__':
-                continue
-            elif item == '.git':
+            if item == exclusion_list:
                 continue
             elif item.split('.')[-1] in suffix:
                 continue
@@ -21,7 +18,7 @@ def generate_tree(path, indent='', deep=0, suffix=['os', 'jpg', 'png', 'DS_Store
             generate_tree(os.path.join(path, item), '|    ' * (deep-1) +indent, deep=deep, suffix=suffix)
             deep -= 1
  
-generate_tree('/Users/fsm/Library/Mobile\\Documents/iCloud~md~obsidian/Documents/my-notebook', suffix=['os', 'jpg', 'png', 'DS_Store', 'obsidian'])
+generate_tree('/Users/fsm/Library/Mobile\\Documents/iCloud~md~obsidian/Documents/my-notebook')
 
 ```
 
