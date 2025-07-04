@@ -4,7 +4,7 @@
 
 LSTM结构（图右）和普通RNN的主要输入输出区别如下所示。
 
-![lstm](img/lstm.png)
+![lstm](lstm.png)
 
 相比RNN只有一个传递状态 $h^t$ ，LSTM有两个传输状态，一个 $c^t$ （cell state），和一个 $h^t$ （hidden state）。（Tips：RNN中的  $h^t$ 对于LSTM中的  $c^t$ ）
 

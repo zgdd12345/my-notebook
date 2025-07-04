@@ -11,7 +11,7 @@ YOLO（You Only Look Once）凭借其实时性、不错的精度，在工业应�
 
 YOLO摒弃了滑动窗口技术，直接将原始图片分割成 $s \times s$ 个互不重合的小方块，然后通过卷积最后产生 $s \times s$ 的特征图，可以认为特征图的每个元素对应原始图片的一个小方块（和视野域挺像的），然后用每个元素来预测那些中心点在该小方格内的目标，这就是YOlO系列算法的朴素思想。
 
-![The schematic of YOLO](source/the%20schematic%20of%20yolo.png "The schematic of YOLO")
+![The schematic of YOLO](the%20schematic%20of%20yolo.png "The schematic of YOLO")
 *Figure 1: The schematic of YOLO*
 
 ### 1.2 设计理念
@@ -21,7 +21,7 @@ YOLO的CNN网络将输入的图片分割成 $s \times s$ 的网格，然后每�
    这是对网络进行训练的结果，可以看作是一个二分类，其结果记为 Pr(object)。假如我们的目标是狗、自行车、汽车，预测单元格cell1对应的目标是狗，则Pr(object)=1；预测单元格cell2不在目标之中，则Pr(object)=0。
 2. 怎么确认边界框的大小与位置？
    边界框的大小与位置可以用4个值来表征： (x, y, w, h) ，其中 (x, y) 是边界框的中心坐标，而 w 和 h 是边界框的宽与高。还有一点要注意，中心坐标的预测值 (x, y) 是相对于每个单元格左上角坐标点的偏移值，并且单位是单元格大小。而边界框的 w 和 h 预测值是相对于整个图片的宽与高的比例，这样理论上4个元素的大小应该在 [0,1] 范围。如图3，图中边界框可以表征为（0.4, 0.6, 0.4, 0.8）。
-   ![gridandboundingbox](source/gridandboundingbox.png "gridandboundingbox")
+   ![gridandboundingbox](gridandboundingbox.png "gridandboundingbox")
    *Figure 3: 网格划分及边界框示意图.*
 
 3. 边界框的置信度
