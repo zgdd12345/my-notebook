@@ -78,3 +78,16 @@ with torch.profiler.profile(
     Apple正在推进‌**MLX框架**‌（类PyTorch API），通过异步执行和统一内存优化进一步缩小与CUDA差距‌。
 
 > 提示：实际性能需结合模型结构验证，建议使用`torch.utils.benchmark`对比不同后端耗时‌。‌
+
+
+```mermaid
+graph TD
+    A[需求类型？] --> B{个人使用？}
+    B -->|是| C{技术小白？}
+    C -->|是| D[LM Studio/DS本地部署大师]
+    C -->|否| E[Llamafile/Jan]
+    B -->|否| F{高并发？}
+    F -->|是| G[vLLM]
+    F -->|否| H[LightLLM]
+
+```
