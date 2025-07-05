@@ -1,40 +1,36 @@
 ### 🔧 ‌**一、MPS的核心原理**‌
 
 1. ‌**底层架构**‌
-    - ‌**Metal框架支持**‌：MPS基于苹果的Metal图形API构建，通过直接调用GPU硬件指令实现并行计算，避开传统图形API的抽象层损耗‌12。
-    - ‌**统一内存模型**‌：Apple Silicon芯片（如M4 Pro）的CPU与GPU共享物理内存，消除数据在设备间复制开销，提升大规模张量运算效率‌34。
-2. ‌**与CUDA的差异**‌
-    
-    |‌**特性**‌|‌**CUDA (NVIDIA)**‌|‌**MPS (Apple Silicon)**‌|
-    |---|---|---|
-    |内存管理|独立显存，需显式拷贝|统一内存，零拷贝|
-    |指令集架构|PTX虚拟指令集|Metal Shader Language|
-    |跨平台兼容性|仅限NVIDIA GPU|macOS/iOS专属|‌26|
-    
+    - ‌**Metal框架支持**‌：MPS基于苹果的Metal图形API构建，通过直接调用GPU硬件指令实现并行计算，避开传统图形API的抽象层损耗‌。
+    - ‌**统一内存模型**‌：Apple Silicon芯片（如M4 Pro）的CPU与GPU共享物理内存，消除数据在设备间复制开销，提升大规模张量运算效率‌。
+2. ‌**与CUDA的差异**
+
+| 特性     | CUDA (NVIDIA) | MPS (Apple Silicon)   |
+| ------ | ------------- | --------------------- |
+| 内存管理   | 独立显存，需显式拷贝    | 统一内存，零拷贝              |
+| 指令集架构  | PTX虚拟指令集      | Metal Shader Language |
+| 跨平台兼容性 | 仅限NVIDIA GPU  | macOS/iOS专属           |
 
 ---
 
 ### ⚙️ ‌**二、技术实现机制**‌
-
 1. ‌**算子优化策略**‌
-    
-    - ‌**内核微调**‌：MPS为不同Metal GPU系列（如M1/M2/M3）生成定制化内核，针对寄存器分配、线程组大小等硬件特性优化‌35。
-    - ‌**动态编译**‌：PyTorch操作符在首次执行时编译为Metal着色器，后续调用复用编译结果减少延迟‌59。
+    - ‌**内核微调**‌：MPS为不同Metal GPU系列（如M1/M2/M3）生成定制化内核，针对寄存器分配、线程组大小等硬件特性优化‌。
+    - ‌**动态编译**‌：PyTorch操作符在首次执行时编译为Metal着色器，后续调用复用编译结果减少延迟‌。
 2. ‌**后端工作流程**‌
-    
-    mermaidCopy Code
-    
-    `graph LR   A[PyTorch算子] --> B(MPS后端)   B --> C{Metal API}   C --> D[GPU指令分派]   D --> E[统一内存存取]`  
-    
-    _注：算子未优化时自动回退CPU执行‌510_
-    
-
+```mermaid
+    graph LR   
+    A[PyTorch算子] --> B(MPS后端)   
+    B --> C{Metal API}   
+    C --> D[GPU指令分派]   
+    D --> E[统一内存存取]
+```
+    注：算子未优化时自动回退CPU执行‌
 ---
 
 ### 🚀 ‌**三、性能表现与局限**‌
 
 1. ‌**加速效果实测**‌
-    
     - ‌**训练任务**‌：
         - ResNet50批量训练：MPS比CPU快‌**6.8倍**‌（M1 Ultra）‌
         - BERT微调：批次处理速度提升‌**4.3倍**‌（M4 Pro 16GB）‌
@@ -63,7 +59,7 @@ with torch.profiler.profile(
 ```
     
 4. ‌**环境配置优化**‌
-    - ‌**PyTorch版本**‌：≥v2.5.1（M4 Pro需动态链接Metal 3.0库）‌711
+    - ‌**PyTorch版本**‌：≥v2.5.1（M4 Pro需动态链接Metal 3.0库）
     - ‌**系统依赖**‌：
 ``` bash
     xcode-select --install  # 安装Metal开发工具   
@@ -79,6 +75,6 @@ with torch.profiler.profile(
 - ‌**慎用场景**‌：  
     ❌ 百亿参数大模型 ❌ 实时工业级推理 ❌ 依赖CUDA生态的工具链
 - ‌**未来演进**‌：  
-    Apple正在推进‌**MLX框架**‌（类PyTorch API），通过异步执行和统一内存优化进一步缩小与CUDA差距‌6。
+    Apple正在推进‌**MLX框架**‌（类PyTorch API），通过异步执行和统一内存优化进一步缩小与CUDA差距‌。
 
-> 提示：实际性能需结合模型结构验证，建议使用`torch.utils.benchmark`对比不同后端耗时‌312。‌
+> 提示：实际性能需结合模型结构验证，建议使用`torch.utils.benchmark`对比不同后端耗时‌。‌
