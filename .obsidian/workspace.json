@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Task List 2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Task List 2025"
             }
           }
         ]
@@ -236,6 +236,7 @@
   },
   "active": "5e608ee332be7413",
   "lastOpenFiles": [
+    "README.md",
     "Computer Science/Progamming Language/python及相应工具笔记/Python内置库/collections.md",
     "Computer Science/Leetcode/day1-easy-移除元素.md",
     "Computer Science/Leetcode/day1-easy-合并两个有序数组.md",
@@ -246,7 +247,6 @@
     "Computer Science/DevelopmentToolNotes/大模型部署工具/大模型部署工具简介.md",
     "Computer Science/DevelopmentToolNotes/Mac相关/MPS核心原理.md",
     "Computer Science/DevelopmentToolNotes/大模型部署工具",
-    "README.md",
     "DeepLearning/LLM/大模型基础论文列表.md",
     "DeepLearning/LLM/指令微调.md",
     "Project/IsqCoder/IsQCoder.md",
