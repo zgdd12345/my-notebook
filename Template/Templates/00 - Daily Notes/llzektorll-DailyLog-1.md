@@ -4,7 +4,7 @@ created: ["{{date}} {{time}}"]
 tags: ["#Log/DaiLylog"]
 ---
 # Metadata:
-- Tag:: #Log/dailylog
+- Tag:: 
 - Created:: {{date: DD-MM-YYYY}}
 - Week:: 
 

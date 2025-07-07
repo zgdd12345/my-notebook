@@ -1,6 +1,6 @@
 # Multi-Head Attention
 
-![MHA](C:\Users\Administrator\Desktop\笔记\知识点笔记\img\MHA.jpg)
+![MHA](./img/MHA.jpg)
 
 The input consists of queries and keys of dimension $d_k$, and values of dimension $d_v$. We compute the dot products of the query with all keys, divide each by $\sqrt{d_k}$, and apply a softmax function to obtain the weights on the values.
 
@@ -8,11 +8,11 @@ The input consists of queries and keys of dimension $d_k$, and values of dimensi
 
 We suspect that for large values of $d_k$, the dot products grow large in magnitude, pushing the softmax function into regions where it has extremely small gradients . To counteract this effect, we scale the dot products by $\frac{1}{\sqrt{d_k}}$.
 
-![attention](C:\Users\Administrator\Desktop\笔记\知识点笔记\img\attention.jpg)
+![attention](./img/attention.jpg)
 
 多头注意力公式如下：
 
-![MH](C:\Users\Administrator\Desktop\笔记\知识点笔记\img\MH.jpg)
+![MH](./img/MH.jpg)
 
 原文解释如下：
 

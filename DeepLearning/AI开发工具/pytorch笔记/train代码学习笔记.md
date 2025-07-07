@@ -1,10 +1,7 @@
 # train代码学习笔记
 
 
-
 ```python
-
-
  epoch_ch3(net, train_iter, loss, updater):
     """训练模型一个迭代周期（定义见第3章）。
 
@@ -33,10 +30,6 @@
     # 返回训练损失和训练精度
     return metric[0] / metric[2], metric[1] / metric[2]
 ```
-
-
-
-
 
 ```python
 def train_ch6(net, train_iter, test_iter, num_epochs, lr, device):
