@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "e2ae5453f97ac70f",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "a2c3874dadf6216a",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -223,8 +223,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "a2c3874dadf6216a",
   "lastOpenFiles": [
+    "Task List 2025.md",
     "README.md",
     "conflict-files-obsidian-git.md",
     "论文阅读笔记/CodeGeneration/LoRA阅读笔记.md",
@@ -253,7 +254,6 @@
     "Tool/copilot-custom-prompts/Rewrite as tweet thread.md",
     "Tool/copilot-custom-prompts/Rewrite as press release.md",
     "Tool/copilot-custom-prompts/Remove URLs.md",
-    "Tool/copilot-custom-prompts/Make shorter.md",
     "Tool/copilot-custom-prompts",
     "Tool/Clippings",
     "Tool",
