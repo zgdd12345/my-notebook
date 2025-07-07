@@ -1,0 +1,401 @@
+{
+  "userId": "7c064655-8af8-499d-8844-607741694c52",
+  "isPlusUser": false,
+  "plusLicenseKey": "",
+  "openAIApiKey": "",
+  "openAIOrgId": "",
+  "huggingfaceApiKey": "",
+  "cohereApiKey": "",
+  "anthropicApiKey": "",
+  "azureOpenAIApiKey": "",
+  "azureOpenAIApiInstanceName": "",
+  "azureOpenAIApiDeploymentName": "",
+  "azureOpenAIApiVersion": "",
+  "azureOpenAIApiEmbeddingDeploymentName": "",
+  "googleApiKey": "",
+  "openRouterAiApiKey": "",
+  "xaiApiKey": "",
+  "mistralApiKey": "",
+  "deepseekApiKey": "enc_desk_djEwi/HyhHh0RUR4gdhHqbtViskD4UO8o6sEiBBtEmZG9+RbhcCIaFzWsY0ZLVsmVP9d",
+  "defaultChainType": "llm_chain",
+  "defaultModelKey": "deepseek-v3-250324|3rd party (openai-format)",
+  "embeddingModelKey": "nomic-embed-text|ollama",
+  "temperature": 0.1,
+  "maxTokens": 16000,
+  "contextTurns": 15,
+  "userSystemPrompt": "",
+  "openAIProxyBaseUrl": "",
+  "openAIEmbeddingProxyBaseUrl": "",
+  "stream": true,
+  "defaultSaveFolder": "Tool/copilot-conversations",
+  "defaultConversationTag": "copilot-conversation",
+  "autosaveChat": false,
+  "includeActiveNoteAsContext": false,
+  "defaultOpenArea": "editor",
+  "customPromptsFolder": "Tool/copilot-custom-prompts",
+  "indexVaultToVectorStore": "NEVER",
+  "qaExclusions": "%5B%5BREADME%5D%5D,Template,English,Excalidraw,Project,%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%2Fimage,%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0%2Fsource,Computer%20Science%2FDevelopmentToolNotes%2FDocker%2Fimg,DeepLearning%2FObject%20detection%2FYOLO%20series%2Fsource,Quant%2FBacktrader%2Fsrc",
+  "qaInclusions": "",
+  "chatNoteContextPath": "",
+  "chatNoteContextTags": [],
+  "enableIndexSync": true,
+  "debug": true,
+  "enableEncryption": true,
+  "maxSourceChunks": 3,
+  "groqApiKey": "",
+  "activeModels": [
+    {
+      "name": "copilot-plus-flash",
+      "provider": "copilot-plus",
+      "enabled": true,
+      "isBuiltIn": true,
+      "core": true,
+      "plusExclusive": true,
+      "projectEnabled": false,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "google/gemini-2.5-flash-lite-preview-06-17",
+      "provider": "openrouterai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "google/gemini-2.5-flash",
+      "provider": "openrouterai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "google/gemini-2.5-pro",
+      "provider": "openrouterai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "gpt-4.1",
+      "provider": "openai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "gpt-4.1-mini",
+      "provider": "openai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "gpt-4.1-nano",
+      "provider": "openai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "o4-mini",
+      "provider": "openai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "capabilities": [
+        "reasoning"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "claude-3-5-sonnet-latest",
+      "provider": "anthropic",
+      "enabled": false,
+      "isBuiltIn": true,
+      "core": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "enabled": false,
+      "isBuiltIn": true,
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "claude-3-7-sonnet-latest",
+      "provider": "anthropic",
+      "enabled": false,
+      "isBuiltIn": true,
+      "capabilities": [
+        "reasoning",
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "claude-3-5-haiku-latest",
+      "provider": "anthropic",
+      "enabled": false,
+      "isBuiltIn": true,
+      "apiKey": ""
+    },
+    {
+      "name": "grok-3-beta",
+      "provider": "xai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "apiKey": ""
+    },
+    {
+      "name": "grok-3-mini-beta",
+      "provider": "xai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "apiKey": ""
+    },
+    {
+      "name": "gemini-2.5-flash-preview-04-17",
+      "provider": "google",
+      "enabled": false,
+      "isBuiltIn": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "gemini-2.5-pro-preview-06-05",
+      "provider": "google",
+      "enabled": false,
+      "isBuiltIn": true,
+      "projectEnabled": true,
+      "capabilities": [
+        "vision"
+      ],
+      "apiKey": ""
+    },
+    {
+      "name": "command-r",
+      "provider": "cohereai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "apiKey": ""
+    },
+    {
+      "name": "command-r-plus",
+      "provider": "cohereai",
+      "enabled": false,
+      "isBuiltIn": true,
+      "apiKey": ""
+    },
+    {
+      "name": "azure-openai",
+      "provider": "azure openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "enableCors": true,
+      "apiKey": ""
+    },
+    {
+      "name": "deepseek-chat",
+      "provider": "deepseek",
+      "enabled": true,
+      "isBuiltIn": true,
+      "capabilities": [
+        "websearch"
+      ],
+      "enableCors": true,
+      "apiKey": ""
+    },
+    {
+      "name": "deepseek-reasoner",
+      "provider": "deepseek",
+      "enabled": true,
+      "isBuiltIn": true,
+      "capabilities": [
+        "reasoning",
+        "websearch"
+      ],
+      "enableCors": true,
+      "apiKey": ""
+    },
+    {
+      "name": "deepseek-v3-250324",
+      "provider": "3rd party (openai-format)",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+      "apiKey": "enc_desk_djEwmQcZWaSQUEpOyxCKUt7z2IfjR7LDkST06mk1NEFxDeK7sb8XypLmWoTF3WTe4W8/",
+      "isEmbeddingModel": false,
+      "capabilities": [
+        "websearch"
+      ],
+      "stream": true,
+      "displayName": "deepseek v3 ARK",
+      "enableCors": true
+    },
+    {
+      "name": "deepseek-r1-250528",
+      "provider": "3rd party (openai-format)",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "https://ark.cn-beijing.volces.com/api/v3",
+      "apiKey": "enc_desk_djEwmQcZWaSQUEpOyxCKUt7z2IfjR7LDkST06mk1NEFxDeK7sb8XypLmWoTF3WTe4W8/",
+      "isEmbeddingModel": false,
+      "capabilities": [
+        "reasoning",
+        "websearch"
+      ],
+      "stream": true,
+      "displayName": "deepseek r1 ARK",
+      "enableCors": true
+    }
+  ],
+  "activeEmbeddingModels": [
+    {
+      "name": "copilot-plus-small",
+      "provider": "copilot-plus",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true,
+      "plusExclusive": true,
+      "apiKey": ""
+    },
+    {
+      "name": "copilot-plus-large",
+      "provider": "copilot-plus-jina",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true,
+      "plusExclusive": true,
+      "believerExclusive": true,
+      "dimensions": 1024,
+      "apiKey": ""
+    },
+    {
+      "name": "copilot-plus-multilingual",
+      "provider": "copilot-plus-jina",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true,
+      "plusExclusive": true,
+      "dimensions": 512,
+      "apiKey": ""
+    },
+    {
+      "name": "text-embedding-3-small",
+      "provider": "openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "core": true,
+      "apiKey": ""
+    },
+    {
+      "name": "text-embedding-3-large",
+      "provider": "openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "apiKey": ""
+    },
+    {
+      "name": "embed-multilingual-light-v3.0",
+      "provider": "cohereai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "apiKey": ""
+    },
+    {
+      "name": "text-embedding-004",
+      "provider": "google",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "apiKey": ""
+    },
+    {
+      "name": "azure-openai",
+      "provider": "azure openai",
+      "enabled": true,
+      "isBuiltIn": true,
+      "isEmbeddingModel": true,
+      "apiKey": ""
+    },
+    {
+      "name": "nomic-embed-text",
+      "provider": "ollama",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "",
+      "apiKey": "",
+      "isEmbeddingModel": true,
+      "capabilities": [],
+      "displayName": "nomic-embed-text",
+      "enableCors": true
+    }
+  ],
+  "embeddingRequestsPerMin": 90,
+  "embeddingBatchSize": 1,
+  "disableIndexOnMobile": true,
+  "showSuggestedPrompts": true,
+  "showRelevantNotes": true,
+  "numPartitions": 1,
+  "promptUsageTimestamps": {},
+  "promptSortStrategy": "timestamp",
+  "defaultConversationNoteName": "{$topic}@{$date}_{$time}",
+  "inlineEditCommands": [],
+  "projectList": [],
+  "enableAutocomplete": false,
+  "autocompleteAcceptKey": "Tab",
+  "allowAdditionalContext": false,
+  "enableWordCompletion": false,
+  "lastDismissedVersion": "2.9.3",
+  "passMarkdownImages": false,
+  "enableCustomPromptTemplating": false
+}

@@ -1,0 +1,28 @@
+{
+  "database": "Zotero",
+  "noteImportFolder": "/Users/fsm/ObsidianLib/Notebook",
+  "pdfExportImageDPI": 120,
+  "pdfExportImageFormat": "jpg",
+  "pdfExportImageQuality": 90,
+  "citeFormats": [
+    {
+      "name": "Bibliography",
+      "format": "formatted-bibliography",
+      "cslStyle": "American Psychological Association 7th edition"
+    }
+  ],
+  "exportFormats": [
+    {
+      "name": "Import Zotero Note",
+      "outputPathTemplate": "/Users/fsm/ObsidianLib/Notebook/{{citekey}}.md",
+      "imageOutputPathTemplate": "/Users/fsm/ObsidianLib/Notebook/img/{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "cslStyle": "American Psychological Association 7th edition",
+      "templatePath": "Template/zotNoteTemplate.md"
+    }
+  ],
+  "citeSuggestTemplate": "[[{{citekey}}]]",
+  "openNoteAfterImport": true,
+  "whichNotesToOpenAfterImport": "first-imported-note",
+  "shouldConcat": true
+}

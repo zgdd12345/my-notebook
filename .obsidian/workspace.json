@@ -1,0 +1,287 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "29a14e57f109adad",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e608ee332be7413",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "README"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e5c14949bf57f5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "9e4f9a34496a8c5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "23453caef8bdcbf3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "b2898c220d3e966b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "mac",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "54ed4b3215c33bd3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 333.5
+  },
+  "right": {
+    "id": "bb32b1910ff08c01",
+    "type": "split",
+    "children": [
+      {
+        "id": "c522b7ae4c236b0e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "577ed1d720583856",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "4a5d2713b1c72b1a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "59bc224c7657f538",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "alphabetical",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "7632f6abe3a90281",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "33add15ecdc4767f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "aac28c812b38ccca",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "6f96eb2532a3bea0",
+            "type": "leaf",
+            "state": {
+              "type": "zotero-annotation-view",
+              "state": {
+                "file": "Clippings/Cursor使用教程：从入门到精通.md",
+                "itemId": 1753,
+                "attachmentId": 1765,
+                "follow": null
+              },
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "c5a10ac357e843db",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "e78d2f7e68bc2dba",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "message-square",
+              "title": "Copilot"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 492.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "workspaces:管理工作区布局": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "audio-recorder:开始/结束录音": false,
+      "random-note:开始漫游笔记": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "copilot:Open Copilot Chat": false,
+      "homepage:Open homepage": false
+    }
+  },
+  "active": "5e608ee332be7413",
+  "lastOpenFiles": [
+    "Computer Science/Progamming Language/python及相应工具笔记/Python内置库/collections.md",
+    "Computer Science/Leetcode/day1-easy-移除元素.md",
+    "Computer Science/Leetcode/day1-easy-合并两个有序数组.md",
+    "Computer Science/Leetcode",
+    "Computer Science/Progamming Language/python及相应工具笔记/Python语法/包、库等.md",
+    "Computer Science/DevelopmentToolNotes/CMake/StartCmake.md",
+    "Computer Science/DevelopmentToolNotes/大模型部署工具/vLLM介绍.md",
+    "Computer Science/DevelopmentToolNotes/大模型部署工具/大模型部署工具简介.md",
+    "Computer Science/DevelopmentToolNotes/Mac相关/MPS核心原理.md",
+    "Computer Science/DevelopmentToolNotes/大模型部署工具",
+    "README.md",
+    "DeepLearning/LLM/大模型基础论文列表.md",
+    "DeepLearning/LLM/指令微调.md",
+    "Project/IsqCoder/IsQCoder.md",
+    "DeepLearning/LLM/CodeGeneration",
+    "DeepLearning/Lossfunction Note/FocalLoss.md",
+    "DeepLearning/CV",
+    "DeepLearning/Lossfunction Note/Diceloss.md",
+    "DeepLearning/Lossfunction Note/CrossEntropy.md",
+    "Task List 2025.md",
+    "Tool/Clippings/Cursor使用教程：从入门到精通.md",
+    "Tool",
+    "Computer Science/Progamming Language/python及相应工具笔记/Python内置库/Python 中的partial().md",
+    "Computer Science/code note/多线程与多进程.md",
+    "DeepLearning/NewStructure/Mamba.md",
+    "DeepLearning/LLM",
+    "Tool/copilot-custom-prompts/Generate table of contents.md",
+    "Project/IsqCoder",
+    "Tool/copilot-custom-prompts/Generate glossary.md",
+    "Tool/copilot-custom-prompts/Fix grammar and spelling.md",
+    "Tool/copilot-custom-prompts/Explain like I am 5.md",
+    "Tool/copilot-custom-prompts/Emojify.md",
+    "Project/ML data analysis fhy/需求分析与设计报告.md",
+    "DeepLearning/知识点笔记/Pasted image 20250701153900.png",
+    "DeepLearning/知识点笔记/Pasted image 20250701153817.png",
+    "Project/ML data analysis fhy",
+    "Project/Quantum Chip Anomaly Detect/20250624-0701出差",
+    "DeepLearning/知识点笔记/img/normalization_model.png",
+    "Tool/copilot-custom-prompts",
+    "Computer Science/DevelopmentToolNotes/未命名.canvas",
+    "论文阅读笔记/image/deformable.png",
+    "论文阅读笔记/image/FaPN.png",
+    "论文阅读笔记/image/VIT.jpg",
+    "论文阅读笔记/source/image.png",
+    "论文阅读笔记/image/PM.PNG",
+    "论文阅读笔记/image/PFnet.PNG",
+    "论文阅读笔记/image/IOU.png"
+  ]
+}
