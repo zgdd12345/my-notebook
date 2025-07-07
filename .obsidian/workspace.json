@@ -25,14 +25,14 @@
             "id": "d622a6126236f9a0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "aFile": "copilot-custom-prompts/Emojify.md",
+                "bFile": "copilot-custom-prompts/Emojify.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "README"
+              "icon": "diff",
+              "title": "Diff: Emojify"
             }
           }
         ],
@@ -176,8 +176,8 @@
                 "showSearch": false,
                 "searchQuery": ""
               },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
@@ -230,17 +230,32 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "audio-recorder:开始/结束录音": false,
-      "random-note:开始漫游笔记": false,
-      "markdown-importer:打开 Markdown 格式转换器": false,
+      "copilot:Open Copilot Chat": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "homepage:Open homepage": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "d622a6126236f9a0",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
     "README.md",
+    "copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot-custom-prompts/Remove URLs.md",
+    "copilot-custom-prompts/Generate glossary.md",
+    "copilot-custom-prompts/Generate table of contents.md",
+    "copilot-custom-prompts/Make longer.md",
+    "copilot-custom-prompts/Make shorter.md",
+    "copilot-custom-prompts/Emojify.md",
+    "copilot-custom-prompts/Explain like I am 5.md",
+    "copilot-custom-prompts/Simplify.md",
+    "copilot-custom-prompts/Summarize.md",
+    "copilot-custom-prompts/Translate to Chinese.md",
+    "copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot-custom-prompts",
+    "conflict-files-obsidian-git.md",
     "Task List.md",
     "CodeGeneration/Intrinsic nature of code.md",
     "CodeGeneration/Code Generation Dataset.md",
@@ -267,23 +282,9 @@
     "Computer Science/Progamming Language/python及相应工具笔记/source/mutex.jpg",
     "Computer Science/DevelopmentToolNotes/Docker/Supplementary/3.理解镜像构成.md",
     "Computer Science/DevelopmentToolNotes/Docker/Supplementary/2.Docker的跨平台问题.md",
-    "Computer Science/DevelopmentToolNotes/Docker/Supplementary/1.容器技术、Docker与K8S.md",
-    "Computer Science/DevelopmentToolNotes/Docker/Supplementary/0.Docker简易教程.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/转置卷积.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/包、库等.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/yacs模块.md",
     "Computer Science/Progamming Language/python及相应工具笔记/source",
-    "Computer Science/Progamming Language/python及相应工具笔记/os模块.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/numpy模块.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/async await异步编程.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/Python 目录.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/Matplotlib笔记.md",
-    "Computer Science/Progamming Language/python及相应工具笔记/Argparse模块.md",
-    "Computer Science/Progamming Language/basic/闭包(closure).md",
-    "Computer Science/Progamming Language/basic/作用域.md",
     "Computer Science/DevelopmentToolNotes/Docker/img",
     "Computer Science/DevelopmentToolNotes/Docker/Supplementary",
-    "Computer Science/经典机器学习算法/image",
-    "Computer Science/Progamming Language/python及相应工具笔记"
+    "Computer Science/经典机器学习算法/image"
   ]
 }
