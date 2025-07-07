@@ -235,12 +235,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c5a10ac357e843db",
+  "active": "508d321c67c74372",
   "lastOpenFiles": [
+    "Computer Science/Leetcode/day2-medium-删除有序数组中的重复项2.md",
+    "conflict-files-obsidian-git.md",
     "Computer Science/Leetcode/未命名.md",
     "Template/day-easy-name.md",
     "Template/Templates/00 - Daily Notes/llzektorll-DailyLog-0.md",
-    "Computer Science/Leetcode/day2-medium-删除有序数组中的重复项2.md",
     "论文阅读笔记/多模态/CLIP.md",
     "Task List 2025.md",
     "README.md",
@@ -268,7 +269,6 @@
     "Computer Science/code note/多线程与多进程.md",
     "DeepLearning/NewStructure/Mamba.md",
     "DeepLearning/LLM",
-    "Tool/copilot-custom-prompts/Generate table of contents.md",
     "Project/IsqCoder",
     "DeepLearning/知识点笔记/Pasted image 20250701153900.png",
     "DeepLearning/知识点笔记/Pasted image 20250701153817.png",

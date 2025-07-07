@@ -1,6 +1,6 @@
 # my ignore
 # .obsidian
-# .obsidian/workspace.json
+.obsidian/workspace.json
 # .obsidian/app.json
 # .obsidian/plugins/obsidian-git/data.json
 # .obsidian/**/*.json  # 忽略所有插件配置
