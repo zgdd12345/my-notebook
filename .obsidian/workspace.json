@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "29a14e57f109adad",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "5e608ee332be7413",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README"
+              "title": "新标签页"
             }
           }
         ]
@@ -53,12 +49,12 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "mac",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
-                "sortOrder": "byModifiedTime"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
               "title": "搜索"
@@ -94,6 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Quant/量化策略研究笔记/网格策略研究笔记.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "网格策略研究笔记 的反向链接列表"
             }
           },
           {
@@ -112,11 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Quant/量化策略研究笔记/网格策略研究笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "网格策略研究笔记 的出链列表"
             }
           },
           {
@@ -140,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Quant/量化策略研究笔记/网格策略研究笔记.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "网格策略研究笔记 的大纲"
             }
           },
           {
@@ -163,32 +162,7 @@
             }
           },
           {
-            "id": "aac28c812b38ccca",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "6f96eb2532a3bea0",
-            "type": "leaf",
-            "state": {
-              "type": "zotero-annotation-view",
-              "state": {
-                "file": "Clippings/Cursor使用教程：从入门到精通.md",
-                "itemId": 1753,
-                "attachmentId": 1765,
-                "follow": null
-              },
-              "icon": "lucide-file",
-              "title": "插件不再活动"
-            }
-          },
-          {
-            "id": "c5a10ac357e843db",
+            "id": "5aae97e839111e97",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -198,24 +172,42 @@
             }
           },
           {
-            "id": "e78d2f7e68bc2dba",
+            "id": "aac28c812b38ccca",
             "type": "leaf",
             "state": {
-              "type": "copilot-chat-view",
+              "type": "calendar",
               "state": {},
-              "icon": "message-square",
-              "title": "Copilot"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "6f96eb2532a3bea0",
+            "type": "leaf",
+            "state": {
+              "type": "zotero-annotation-view",
+              "state": {
+                "file": "Quant/量化策略研究笔记/网格策略研究笔记.md",
+                "itemId": 1753,
+                "attachmentId": 1765,
+                "follow": null
+              },
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 492.5
+    "width": 367.5
   },
   "left-ribbon": {
     "hiddenItems": {
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "random-note:开始漫游笔记": false,
+      "audio-recorder:开始/结束录音": false,
       "workspaces:管理工作区布局": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
@@ -224,69 +216,60 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "copilot:Open Copilot Chat": false,
-      "audio-recorder:开始/结束录音": false,
-      "random-note:开始漫游笔记": false,
-      "markdown-importer:打开 Markdown 格式转换器": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-git:Open Git source control": false,
       "homepage:Open homepage": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false
-      "templater-obsidian:Templater": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "copilot:Open Copilot Chat": false,
-      "homepage:Open homepage": false
     }
   },
-  "active": "5e608ee332be7413",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Computer Science/Progamming Language/python及相应工具笔记/Python内置库/collections.md",
-    "Computer Science/Leetcode/day1-easy-移除元素.md",
-    "Computer Science/Leetcode/day1-easy-合并两个有序数组.md",
-    "Computer Science/Leetcode",
-    "Computer Science/Progamming Language/python及相应工具笔记/Python语法/包、库等.md",
-    "Computer Science/DevelopmentToolNotes/CMake/StartCmake.md",
-    "Computer Science/DevelopmentToolNotes/大模型部署工具/vLLM介绍.md",
-    "Computer Science/DevelopmentToolNotes/大模型部署工具/大模型部署工具简介.md",
-    "Computer Science/DevelopmentToolNotes/Mac相关/MPS核心原理.md",
-    "Computer Science/DevelopmentToolNotes/大模型部署工具",
     "README.md",
-    "DeepLearning/LLM/大模型基础论文列表.md",
-    "DeepLearning/LLM/指令微调.md",
-    "Project/IsqCoder/IsQCoder.md",
-    "DeepLearning/LLM/CodeGeneration",
-    "DeepLearning/Lossfunction Note/FocalLoss.md",
-    "DeepLearning/CV",
-    "DeepLearning/Lossfunction Note/Diceloss.md",
-    "DeepLearning/Lossfunction Note/CrossEntropy.md",
-    "Task List 2025.md",
-    "Tool/Clippings/Cursor使用教程：从入门到精通.md",
-    "Tool",
-    "Computer Science/Progamming Language/python及相应工具笔记/Python内置库/Python 中的partial().md",
-    "Computer Science/code note/多线程与多进程.md",
-    "DeepLearning/NewStructure/Mamba.md",
-    "DeepLearning/LLM",
-    "Tool/copilot-custom-prompts/Generate table of contents.md",
-    "Project/IsqCoder",
-    "Tool/copilot-custom-prompts/Generate glossary.md",
-    "Tool/copilot-custom-prompts/Fix grammar and spelling.md",
-    "Tool/copilot-custom-prompts/Explain like I am 5.md",
-    "Tool/copilot-custom-prompts/Emojify.md",
-    "Project/ML data analysis fhy/需求分析与设计报告.md",
-    "DeepLearning/知识点笔记/Pasted image 20250701153900.png",
-    "DeepLearning/知识点笔记/Pasted image 20250701153817.png",
-    "Project/ML data analysis fhy",
-    "Project/Quantum Chip Anomaly Detect/20250624-0701出差",
-    "DeepLearning/知识点笔记/img/normalization_model.png",
+    "conflict-files-obsidian-git.md",
+    "论文阅读笔记/CodeGeneration/LoRA阅读笔记.md",
+    "论文阅读笔记/CodeGeneration/Intrinsic nature of code.md",
+    "论文阅读笔记/CodeGeneration/Code Generation Dataset.md",
+    "论文阅读笔记/CodeGeneration",
+    "论文阅读笔记/CV/Road/VecRoad_ Point-based Iterative Graph Exploration for Road Graphs Extraction.md",
+    "论文阅读笔记/CV/Road/Improved Connectivity.md",
+    "论文阅读笔记/CV/Road/D-LinkNet阅读笔记.md",
+    "论文阅读笔记/CV/Road/CoANet笔记.md",
+    "论文阅读笔记/CV/ViT Vision in Transformer学习笔记.md",
+    "论文阅读笔记/CV/Vision Transformer.md",
+    "论文阅读笔记/CV/Swin Transformer.md",
+    "论文阅读笔记/CV/Stacked Hourglass Networks for Human Pose Estimation.md",
+    "论文阅读笔记/CV/Segment anything.md",
+    "论文阅读笔记/CV/Segformer.md",
+    "论文阅读笔记/CV/Road",
+    "论文阅读笔记/CV/FCN学习笔记.md",
+    "论文阅读笔记/CV/FaPN内容摘要.md",
+    "论文阅读笔记/CV/Deformable Convolutional Networks阅读翻译.md",
+    "论文阅读笔记/CV",
+    "Tool/copilot-custom-prompts/Translate to Chinese.md",
+    "Tool/copilot-custom-prompts/Summarize.md",
+    "Tool/copilot-custom-prompts/Simplify.md",
+    "Tool/copilot-custom-prompts/Rewrite as tweet.md",
+    "Tool/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "Tool/copilot-custom-prompts/Rewrite as press release.md",
+    "Tool/copilot-custom-prompts/Remove URLs.md",
+    "Tool/copilot-custom-prompts/Make shorter.md",
     "Tool/copilot-custom-prompts",
-    "Computer Science/DevelopmentToolNotes/未命名.canvas",
-    "论文阅读笔记/image/deformable.png",
-    "论文阅读笔记/image/FaPN.png",
-    "论文阅读笔记/image/VIT.jpg",
+    "Tool/Clippings",
+    "Tool",
+    "Computer Science/code note",
+    "Computer Science/Progamming Language/python及相应工具笔记/第三方库/Numpy",
+    "Computer Science/Progamming Language/python及相应工具笔记/第三方库",
+    "Computer Science/Progamming Language/python及相应工具笔记/Python语法",
     "论文阅读笔记/source/image.png",
+    "论文阅读笔记/image/VIT.jpg",
     "论文阅读笔记/image/PM.PNG",
     "论文阅读笔记/image/PFnet.PNG",
-    "论文阅读笔记/image/IOU.png"
+    "论文阅读笔记/image/FaPN.png",
+    "论文阅读笔记/image/FAM.png",
+    "论文阅读笔记/image/IOU.png",
+    "论文阅读笔记/image/FSM.png",
+    "论文阅读笔记/image/FM.PNG",
+    "论文阅读笔记/image/deformable.png"
   ]
 }
