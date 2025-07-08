@@ -24,14 +24,32 @@ date: 2025-07-08
 ```
 ## 算法思想
 
-在这里描述解题思路和算法思想
+算是最简单的动态规划？
 
+以卖出时间为当前点，往前找最低价格，就是当前的最佳卖出点，也就可以获得最大利润。
+所以循环的时候记录前面的最低价格即可。
+
+所以时间复杂度O(n)
+
+![[bestprice1.png]]
 
 ## Python 实现
 
-```python
 
-{{Python 代码实现}}
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        res = 0
+        min_price = prices[0]
+        for i, sell in enumerate(prices[1:]):
+            if min_price > sell:
+                min_price = sell
+            else:
+                profit = sell - min_price
+                if profit > res:
+                    res = profit
+
+        return res
 ```
 
 ## C++ 实现
@@ -43,8 +61,8 @@ date: 2025-07-08
 
 ## 复杂度分析
 
-- 时间复杂度: O()
-- 空间复杂度: O()
+- 时间复杂度: O(n)
+- 空间复杂度: O(1)
 
 ## 相似题目
 
