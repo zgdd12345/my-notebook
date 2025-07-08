@@ -25,14 +25,23 @@ date: 2025-07-09
 ```
 ## 算法思想
 
-在这里描述解题思路和算法思想
+我的思路：
+只要当前和前面的价格有价格差就有利润
+每卖一次就是重新开始，更新当前价格为初始价格。
 
 
 ## Python 实现
 
 ```python
-
-{{Python 代码实现}}
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_price = prices[0]
+        res = 0
+        for cur in prices[1:]:
+            if cur > min_price:
+                res += cur - min_price
+            min_price = cur
+        return res
 ```
 
 ## C++ 实现
