@@ -30,6 +30,7 @@ class Solution:
 		return p1+1
 ```
 
+
 Official solution：
 ```python
 class Solution: 
