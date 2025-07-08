@@ -79,8 +79,7 @@ e0ee909e2ec05a74f09c9e4f6c1c525bc21e7a47 (HEAD -> main) test py file
 <font style="color:rgb(51, 51, 51);">只要上面的命令行窗口还没有被关掉，我们可以找到指定的版本号，版本号不用写全，git会自动去找。</font>
 
 <font style="color:rgb(51, 51, 51);">注：git的版本回退速度非常快，因为git在内部有个指向当前版本的HEAD指针，当回退版本时，git仅仅是把指针指向指定版本。然后顺便把工作区的文件更新了。所以我们让HEAD指针指向哪个版本号，就把当前版本定位在哪。</font>
-
-        1. <font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git reflog：记录每次的命令。</font>
+1. <font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git reflog：记录每次的命令。</font>
 
 ```plain
 fsm@fengshimingdeMacBook-Pro quantum_7_17 % git reflog
@@ -273,8 +272,6 @@ $ git branch
 
 <font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git branch</font><font style="color:rgb(51, 51, 51);">命令会列出所有分支，当前分支前面会标一个</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">*</font><font style="color:rgb(51, 51, 51);">号。然后，我们就可以在</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">dev</font><font style="color:rgb(51, 51, 51);">分支上正常提交。</font>
 
-<font style="color:rgb(51, 51, 51);"></font>
-
 + 查看当前分支：<font style="color:rgb(51, 51, 51);">用</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git branch</font><font style="color:rgb(51, 51, 51);">命令查看当前分支:</font>
 
 ```plain
@@ -319,36 +316,22 @@ Deleted branch dev (was b17d20e).
 
 + switch操作
 
-我们在上面切换分支使用<font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git checkout <branch>，</font><font style="color:rgb(51, 51, 51);">而前面讲过的撤销修改则是</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git checkout -- <file></font><font style="color:rgb(51, 51, 51);">，同一个命令，有两种作用，确实有点令人迷惑。实际上，切换分支这个动作，用</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">switch</font><font style="color:rgb(51, 51, 51);">更科学。因此，最新版本的Git提供了新的</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git switch</font><font style="color:rgb(51, 51, 51);">命令来切换分支，创建并切换到新的</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">dev</font><font style="color:rgb(51, 51, 51);">分支，可以使用：</font>
+我们在上面切换分支使用git checkout <branch>，而前面讲过的撤销修改则是git checkout -- <file>，同一个命令，有两种作用，确实有点令人迷惑。实际上，切换分支这个动作，用switch更科学。因此，最新版本的Git提供了新的git switch命令来切换分支，创建并切换到新的dev分支，可以使用：git switch -c dev
+直接切换到已有的master分支，可以使用：git switch master
 
-```plain
-git switch -c dev
-```
+使用新的git switch命令，比git checkout要更容易理解。
 
-<font style="color:rgb(51, 51, 51);">直接切换到已有的</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">master</font><font style="color:rgb(51, 51, 51);">分支，可以使用：</font>
-
-```plain
-git switch master
-```
-
-<font style="color:rgb(51, 51, 51);">使用新的</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git switch</font><font style="color:rgb(51, 51, 51);">命令，比</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git checkout</font><font style="color:rgb(51, 51, 51);">要更容易理解。</font>
-
-### <font style="color:rgb(68, 68, 68);">小结</font>
-<font style="color:rgb(51, 51, 51);">Git鼓励大量使用分支：</font>
-
-<font style="color:rgb(51, 51, 51);">查看分支：</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git branch</font>
-
-<font style="color:rgb(51, 51, 51);">创建分支：</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git branch <name></font>
-
-<font style="color:rgb(51, 51, 51);">切换分支：</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git checkout <name></font><font style="color:rgb(51, 51, 51);">或者</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git switch <name></font>
-
-<font style="color:rgb(51, 51, 51);">创建+切换分支：</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git checkout -b <name></font><font style="color:rgb(51, 51, 51);">或者</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git switch -c <name></font>
-
-<font style="color:rgb(51, 51, 51);">合并某分支到当前分支：</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git merge <name></font>
-
-<font style="color:rgb(51, 51, 51);">删除分支：</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git branch -d <name></font>
+### 小结
+Git鼓励大量使用分支：
+查看分支：git branch
+创建分支：git branch
+切换分支：git checkout <name>或者git switch <name>
+创建+切换分支：git checkout -b 或者git switch -c <name>
+合并某分支到当前分支：git merge
+删除分支：git branch -d <name>
 
 ## 解决冲突
+
 两个分支同一个文件都被修改之后，Git无法执行快速合并，这样就可能有冲突。
 
 ```plain
@@ -501,8 +484,8 @@ stash@{0}: WIP on dev: f52c633 add merge
 
 <font style="color:rgb(51, 51, 51);">工作现场还在，Git把stash内容存在某个地方了，但是需要恢复一下，有两个办法：</font>
 
-    - <font style="color:rgb(51, 51, 51);">一是用</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git stash apply</font><font style="color:rgb(51, 51, 51);">恢复，但是恢复后，stash内容并不删除，你需要用</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git stash drop</font><font style="color:rgb(51, 51, 51);">来删除；</font>
-    - <font style="color:rgb(51, 51, 51);">另一种方式是用</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git stash pop</font><font style="color:rgb(51, 51, 51);">，恢复的同时把stash内容也删了：</font>
+    - 一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+    - 另一种方式是用git stash pop，恢复的同时把stash内容也删了：
 
 ```plain
 $ git stash pop
@@ -575,15 +558,17 @@ $ git remote
 origin
 ```
 
-<font style="color:rgb(51, 51, 51);">或者，用</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git remote -v</font><font style="color:rgb(51, 51, 51);">显示更详细的信息：</font>
+或者，用git remote -v显示更详细的信息：
 
-```plain
+``` plain
+
 $ git remote -v
 origin  git@github.com:michaelliao/learngit.git (fetch)
 origin  git@github.com:michaelliao/learngit.git (push)
+
 ```
 
-<font style="color:rgb(51, 51, 51);">上面显示了可以抓取和推送的</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">origin</font><font style="color:rgb(51, 51, 51);">的地址。如果没有推送权限，就看不到push的地址。</font>
+上面显示了可以抓取和推送的origin的地址。如果没有推送权限，就看不到push的地址。
 
 
 
@@ -1080,6 +1065,7 @@ Date:   Thu Aug 22 22:49:22 2013 +0800
 git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 ```
 
+
 <font style="color:rgb(51, 51, 51);">来看看</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">git lg</font><font style="color:rgb(51, 51, 51);">的效果：</font>
 
 ![](https://cdn.nlark.com/yuque/0/2023/png/29307286/1689842750206-8e202c35-6490-4051-8bbd-3093f3226c31.png)
@@ -1087,7 +1073,8 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ### 配置文件
 <font style="color:rgb(51, 51, 51);">配置Git的时候，加上</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">--global</font><font style="color:rgb(51, 51, 51);">是针对当前用户起作用的，如果不加，那只针对当前的仓库起作用。每个仓库的Git配置文件都放在</font><font style="color:rgb(51, 51, 51);background-color:rgb(250, 250, 250);">.git/config</font><font style="color:rgb(51, 51, 51);">文件中：</font>
 
-```plain
+
+``` bash
 $ cat .git/config 
 [core]
     repositoryformatversion = 0
