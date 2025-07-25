@@ -4,7 +4,7 @@ tags: [LeetCode, 算法]
  date: 2025-07-11
 
 --- 
-**题目编号** : 
+**题目编号** : 238
 **难度** ⭐️⭐️⭐️ (中等)   
 **链接**: [链接](https://leetcode.cn/problems/product-of-array-except-self/?envType=study-plan-v2&envId=top-interview-150)
 **标签**: #数组 #前缀和    
@@ -16,7 +16,8 @@ tags: [LeetCode, 算法]
 
 请 **不要使用除法，** 且在 `O(n)` 时间复杂度内完成此题。
 
-## 示例 **示例 1:**
+## 示例 
+**示例 1:**
 
 **输入:** nums = `[1,2,3,4]`
 **输出:** `[24,12,8,6]`
@@ -28,7 +29,8 @@ tags: [LeetCode, 算法]
 
 ## 算法思想
 
-计算前缀数组和后缀数组
+方法一：计算前缀数组和后缀数组
+方法二：空间复杂度 O(1) 的方法
 
 
 ## Python 实现
