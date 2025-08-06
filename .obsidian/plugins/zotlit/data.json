@@ -2,7 +2,7 @@
   "logLevel": "INFO",
   "citationEditorSuggester": true,
   "showCitekeyInSuggester": false,
-  "literatureNoteFolder": "Tool/LiteratureNotes",
+  "literatureNoteFolder": "论文阅读笔记/LiteratureNotes",
   "enableServer": true,
   "serverPort": 9091,
   "serverHostname": "127.0.0.1",
@@ -12,8 +12,8 @@
       "filename": "<%= it.citekey ?? it.DOI ?? it.title ?? it.key %>.md"
     }
   },
-  "updateAnnotBlock": false,
-  "updateOverwrite": false,
+  "updateAnnotBlock": true,
+  "updateOverwrite": true,
   "autoPairEta": false,
   "autoTrim": [
     false,

@@ -60,4 +60,5 @@
 - [ ] 个人量化平台开发🛫 2025-06-22  
 	- [ ] 回测系统开发
 	- [ ] 前端界面开发
-	- [ ] 
+
+[@leviStixelNetDeepConvolutional2015]
