@@ -194,7 +194,7 @@
       "apiKey": ""
     },
     {
-      "name": "gemini-2.5-flash-preview-04-17",
+      "name": "gemini-2.5-flash",
       "provider": "google",
       "enabled": false,
       "isBuiltIn": true,
@@ -205,7 +205,7 @@
       "apiKey": ""
     },
     {
-      "name": "gemini-2.5-pro-preview-06-05",
+      "name": "gemini-2.5-pro",
       "provider": "google",
       "enabled": false,
       "isBuiltIn": true,
@@ -234,7 +234,6 @@
       "provider": "azure openai",
       "enabled": true,
       "isBuiltIn": true,
-      "enableCors": true,
       "apiKey": ""
     },
     {
@@ -242,10 +241,6 @@
       "provider": "deepseek",
       "enabled": true,
       "isBuiltIn": true,
-      "capabilities": [
-        "websearch"
-      ],
-      "enableCors": true,
       "apiKey": ""
     },
     {
@@ -254,10 +249,8 @@
       "enabled": true,
       "isBuiltIn": true,
       "capabilities": [
-        "reasoning",
-        "websearch"
+        "reasoning"
       ],
-      "enableCors": true,
       "apiKey": ""
     },
     {
@@ -289,6 +282,22 @@
       ],
       "stream": true,
       "displayName": "deepseek r1 ARK",
+      "enableCors": true
+    },
+    {
+      "name": "qwen-plus",
+      "provider": "3rd party (openai-format)",
+      "enabled": true,
+      "isBuiltIn": false,
+      "baseUrl": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "apiKey": "enc_desk_djEw7FA9SoPEXJSxtpUuVE6vUOBa/RStIqWDf9iGygjJMKlmjIrwooJtT8csX1dLEzwa",
+      "isEmbeddingModel": false,
+      "capabilities": [
+        "reasoning",
+        "websearch"
+      ],
+      "stream": true,
+      "displayName": "qwen-plus",
       "enableCors": true
     }
   ],
