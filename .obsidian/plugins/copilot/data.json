@@ -18,7 +18,7 @@
   "mistralApiKey": "",
   "deepseekApiKey": "enc_desk_djEwi/HyhHh0RUR4gdhHqbtViskD4UO8o6sEiBBtEmZG9+RbhcCIaFzWsY0ZLVsmVP9d",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "deepseek-v3-250324|3rd party (openai-format)",
+  "defaultModelKey": "deepseek-chat|deepseek",
   "embeddingModelKey": "nomic-embed-text|ollama",
   "temperature": 0.1,
   "maxTokens": 16000,
