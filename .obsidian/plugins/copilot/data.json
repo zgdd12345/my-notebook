@@ -18,7 +18,7 @@
   "mistralApiKey": "",
   "deepseekApiKey": "enc_desk_djEwi/HyhHh0RUR4gdhHqbtViskD4UO8o6sEiBBtEmZG9+RbhcCIaFzWsY0ZLVsmVP9d",
   "defaultChainType": "llm_chain",
-  "defaultModelKey": "deepseek-chat|deepseek",
+  "defaultModelKey": "qwen-plus|3rd party (openai-format)",
   "embeddingModelKey": "nomic-embed-text|ollama",
   "temperature": 0.1,
   "maxTokens": 16000,
@@ -60,7 +60,7 @@
     {
       "name": "google/gemini-2.5-flash-lite-preview-06-17",
       "provider": "openrouterai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "projectEnabled": true,
@@ -72,7 +72,7 @@
     {
       "name": "google/gemini-2.5-flash",
       "provider": "openrouterai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "projectEnabled": true,
@@ -84,7 +84,7 @@
     {
       "name": "google/gemini-2.5-pro",
       "provider": "openrouterai",
-      "enabled": false,
+      "enabled": true,
       "isBuiltIn": true,
       "core": true,
       "projectEnabled": true,
@@ -96,7 +96,7 @@
     {
       "name": "gpt-5",
       "provider": "openai",
-      "enabled": true,
+      "enabled": false,
       "isBuiltIn": true,
       "core": true,
       "capabilities": [
@@ -107,7 +107,7 @@
     {
       "name": "gpt-5-mini",
       "provider": "openai",
-      "enabled": true,
+      "enabled": false,
       "isBuiltIn": true,
       "core": true,
       "capabilities": [
@@ -118,7 +118,7 @@
     {
       "name": "gpt-5-nano",
       "provider": "openai",
-      "enabled": true,
+      "enabled": false,
       "isBuiltIn": true,
       "core": true,
       "capabilities": [
@@ -155,29 +155,6 @@
       "provider": "openai",
       "enabled": false,
       "isBuiltIn": true,
-      "core": true,
-      "capabilities": [
-        "vision"
-      ],
-      "apiKey": ""
-    },
-    {
-      "name": "o4-mini",
-      "provider": "openai",
-      "enabled": false,
-      "isBuiltIn": true,
-      "core": true,
-      "capabilities": [
-        "reasoning"
-      ],
-      "apiKey": ""
-    },
-    {
-      "name": "claude-3-5-sonnet-latest",
-      "provider": "anthropic",
-      "enabled": false,
-      "isBuiltIn": true,
-      "core": true,
       "capabilities": [
         "vision"
       ],
@@ -203,13 +180,6 @@
         "reasoning",
         "vision"
       ],
-      "apiKey": ""
-    },
-    {
-      "name": "claude-3-5-haiku-latest",
-      "provider": "anthropic",
-      "enabled": false,
-      "isBuiltIn": true,
       "apiKey": ""
     },
     {
@@ -249,20 +219,6 @@
       "apiKey": ""
     },
     {
-      "name": "command-r",
-      "provider": "cohereai",
-      "enabled": false,
-      "isBuiltIn": true,
-      "apiKey": ""
-    },
-    {
-      "name": "command-r-plus",
-      "provider": "cohereai",
-      "enabled": false,
-      "isBuiltIn": true,
-      "apiKey": ""
-    },
-    {
       "name": "azure-openai",
       "provider": "azure openai",
       "enabled": true,
@@ -274,6 +230,7 @@
       "provider": "deepseek",
       "enabled": true,
       "isBuiltIn": true,
+      "maxTokens": 8100,
       "apiKey": ""
     },
     {
