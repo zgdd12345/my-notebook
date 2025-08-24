@@ -104,7 +104,26 @@ Reasoned for 3m 6s
 
 **AST合成伪码（示意）**
 
-`# 伪码：深度限制 + 枚举覆盖 def gen_expr(depth):     if depth == 0:         return choice([IntLit(), BoolLit(), VarRef()])     return choice([         BinOp(gen_expr(depth-1), op=choice(OPS), gen_expr(depth-1)),         Call(func=gen_ident(), args=[gen_expr(depth-1) for _ in range(rand_k())]),         IfExpr(cond=gen_bool(depth-1), then=gen_expr(depth-1), els=gen_expr(depth-1)),     ])  def gen_func(max_depth):     body = seq_of_stmts(depth=max_depth)     return FuncDef(name=gen_ident(),                    params=gen_params(),                    ret=choice(types),                    body=body)`
+``` python
+
+# 伪码：深度限制 + 枚举覆盖
+def gen_expr(depth):
+    if depth == 0:
+        return choice([IntLit(), BoolLit(), VarRef()])
+    return choice([
+        BinOp(gen_expr(depth-1), op=choice(OPS), gen_expr(depth-1)),
+        Call(func=gen_ident(), args=[gen_expr(depth-1) for _ in range(rand_k())]),
+        IfExpr(cond=gen_bool(depth-1), then=gen_expr(depth-1), els=gen_expr(depth-1)),
+    ])
+
+def gen_func(max_depth):
+    body = seq_of_stmts(depth=max_depth)
+    return FuncDef(name=gen_ident(),
+                   params=gen_params(),
+                   ret=choice(types),
+                   body=body)
+
+```
 
 ### B2. 语义与执行驱动合成（Property-based / Fuzz）
 
