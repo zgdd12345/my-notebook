@@ -4,8 +4,8 @@
 
 **向量相加（A+B→C）**——一段完整可编译运行的 `.cu` 文件：
 
+``` c++
 
-```c++
 // vec_add.cu
 #include <cstdio>
 #include <cuda_runtime.h>
