@@ -281,3 +281,23 @@ generate_tree('/Users/fsm/Library/Mobile\\Documents/iCloud~md~obsidian/Documents
 |    |    |    |---双目相机.md
 |    |    |    |---散斑结构光三维重建原理.md
 |    |    |    |---双目散斑深度模组的深度自动检测和动态标定.md
+
+
+
+``` mermaid
+sequenceDiagram
+    actor 用户
+    participant 前端
+    participant 后端
+    participant 机器学习模型库
+
+    用户 ->> 前端: 进入数据分析模块
+    前端 ->> 后端: 查询数据处理历史任务
+    后段 ->> 前端: 返回数据处理历史任务
+    后段 ->> 机器学习模型库: 查询现有模型信息
+    机器学习模型库 -->> 后端: 返回现有模型信息
+    后段 ->> 前端: 返回现有模型信息
+    后段 -->> 前端: 返回登录状态
+    前端 -->> 用户: 显示结果
+
+```
