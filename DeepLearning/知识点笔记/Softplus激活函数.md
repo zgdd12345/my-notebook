@@ -87,27 +87,29 @@ y = act(x)
 
     
 - **稳定实现**：内部使用稳定公式  
-$$
-    \log1p(e^{-|x|})+\max(x,0)log1p(e−∣x∣)+max(x,0)，并在 `beta*x > threshold` 时近似为 xxx 以避免溢出。
-$$
+    $\log1p(e^{-|x|})+\max(x,0)$，并在 `beta*x > threshold` 时近似为 $x$ 以避免溢出。
     
 - **正值约束示例**（给方差/尺度）：
     
-    `raw_scale = torch.randn(batch, dim) scale = F.softplus(raw_scale) + 1e-6  # 加小常数防止为 0`
+
+``` python
+    raw_scale = torch.randn(batch, dim) 
+    scale = F.softplus(raw_scale) + 1e-6  # 加小常数防止为 0
+```
+`
     
 - **β 的作用**：`beta↑` → 曲线更陡，逼近 ReLU；`beta↓` → 更平滑、更接近线性。
     
 - **反函数**（偶尔用于重参数化）：  
-    softplus⁡−1(y)=log⁡(ey−1)=log⁡(expm1⁡(y))\operatorname{softplus}^{-1}(y)=\log(e^{y}-1)=\log(\operatorname{expm1}(y))softplus−1(y)=log(ey−1)=log(expm1(y))。
-    
+$$
+    \operatorname{softplus}^{-1}(y)=\log(e^{y}-1)=\log(\operatorname{expm1}
+$$
 
 ---
 
 ## 何时选用？
 
 - **隐藏层**：若追求更平滑的优化或在概率模型中，Softplus 是 ReLU 的稳妥替代；但在主流判别模型里，GELU/SiLU 常更优。
-    
 - **输出层**：当你需要 **严格正值** 且 **梯度不过分爆炸** 的映射（比 `exp` 更温和），Softplus 非常合适（如方差、标准差、强度、速率等）。
     
-
 如果你正把某个参数限制为正、又担心 `exp` 带来的梯度/数值不稳定，**Softplus 往往是首选**。
