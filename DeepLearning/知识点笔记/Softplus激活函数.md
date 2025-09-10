@@ -1,15 +1,11 @@
 **Softplus** 是一种平滑版的 ReLU 激活函数，常写成
-
 $$
 \operatorname{softplus}(x)=\log(1+e^{x})
 $$
-
 更一般的 **β‑Softplus** 为
-
 $$
 \operatorname{softplus}_\beta(x)=\frac{1}{\beta}\log\!\big(1+e^{\beta x}\big)\quad(\beta>0)
 $$
-
 ---
 
 ## 直观理解
