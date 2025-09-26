@@ -1,14 +1,14 @@
 ## 1. Python 中的异步编程
 * **重要概念：**
 	* 协程（coroutine）：Coroutines are special functions that work similarly Python generators that on await they release the flow of control back to the event loop. A coroutine needs to be scheduled to run using the event loop, to do this we create a Task, which is a type of Future.
-		1. 使用`async def`定义的函数是一个coroutine，这个函数内部可以用`await`关键字。
+		1. <u>使用`async def`定义的函数是一个coroutine，这个函数内部可以用`await`关键字。</u>
 		2. 使用`async def`定义的函数，调用之后返回的值，是一个coroutine对象，可以被用于`await`或者`asyncio.run`等。
 		
 		- 第一层含义是语法层面的概念，一个函数（一段代码）由`async def`定义，那么它就是一个coroutine。带来的效果是，这个函数内部可以用`await`。那么反过来就是说，一个普通的`def`定义的函数，内部不能用`await`，否则就会触发语法错误（SyntaxError）。
 		 - 第二层含义是Python解释器运行时的概念，`coroutine`是Python解释器里内置的一个类。当我们调用`async def`定义的函数时，得到的返回值的类型就是`coroutine`。
 		
 		* 协程最重要的特性，在于多个协程可以同时`asyncio.sleep(1)`，现实世界只过去了1秒，而三个协程的时间都过去了1秒，从而节约了等待的时间。
-		*`asyncio`里面，`await`的用法有两种：
+	* `asyncio`里面，`await`的用法有两种：
 		- `await coroutine`，就像普通的函数调用一样，执行coroutine对应的代码。
 		- `await task`，中断当前代码的执行，event loop开始调度任务，直到`task`执行结束，恢复执行当前代码。
 ## 2. 异步函数
