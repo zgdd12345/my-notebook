@@ -11,6 +11,8 @@
 	* `asyncio`里面，`await`的用法有两种：
 		- `await coroutine`，就像普通的函数调用一样，执行coroutine对应的代码。
 		- `await task`，中断当前代码的执行，event loop开始调度任务，直到`task`执行结束，恢复执行当前代码。
+		- 当我们对一个coroutine使用`await`时，当前函数中断执行，Python解释器开始执行coroutine的代码，这和普通的函数调用没什么区别。
+		- 
 ## 2. 异步函数
 Python有四种函数：
 ```
@@ -63,4 +65,5 @@ async def async_function():
 ## 3. Python并发之异步I/O(async,await)
 
 	在Http请求方面，Python异步协程可以提交请求然后去做队列中其他等待的任务，让它慢慢请求，而不是传统的一直等它请求到完成为止，这样的话会浪费更多的时间与资源。总之异步编程能让你的代码在处于等待资源状态时处理其他任务。
+
 
