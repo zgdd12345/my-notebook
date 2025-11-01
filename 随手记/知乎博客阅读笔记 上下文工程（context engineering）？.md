@@ -15,7 +15,7 @@ prompt engineering 已经不是核心了，context engineering 才是下一阶�
 
 那实际操作中，这些高级的上下文工程到底怎么做？
 
-## *a) [LLM](https://zhida.zhihu.com/search?content_id=265778318&content_type=Article&match_order=1&q=LLM&zhida_source=entity)的特征选择*
+## **a) [LLM](https://zhida.zhihu.com/search?content_id=265778318&content_type=Article&match_order=1&q=LLM&zhida_source=entity)的特征选择*
 
 有个老哥换了个角度看这事儿：其实上下文工程就是传统机器学习里的特征工程，只不过换成了大模型版本。以前搞机器学习，特征工程要干这些活：抽取特征、预处理、构造新特征、筛选降维。现在大模型的各种操作，其实对应的就是这些
 
@@ -40,14 +40,10 @@ prompt engineering 已经不是核心了，context engineering 才是下一阶�
 
 ### **c) [Text-to-SQL](https://zhida.zhihu.com/search?content_id=265778318&content_type=Article&match_order=1&q=Text-to-SQL&zhida_source=entity)能用吗？**
 
-主持人问现场500名观众："你们有谁把text-to-SQL做到生产环境了？"结果没人举手。Text-to-SQL发展10来年，这不是因为需求不够强，而是查询理解太难了。自然语言本来就模糊，业务术语又千差万别。大模型根本不知道你们公司"收入"或"活跃用户"具体指什么，除非你做了大量的上下文工程
+不能用，目前产业界没有应用
 
-可靠做法是先铺好以下的基础素材，而不是直接把问题丢给模型
+## **长短期记忆不仅仅是存储**
 
-1、业务术语表和概念映射
+大模型的记忆问题大模型只有"7秒记忆"，模型窗口长度就是他的记忆空间，给的prompt就是他的全部记忆
 
-2、带约束条件的查询模板
-
-3、执行前验证层，拦住语义错误
-
-4、反馈机制，持续优化理解能力
+很多团队想做“记忆”功能，但这不是随手一加的开关，得有方案设计。要落地，需要同时考虑用户体验、隐私保护和系统架构。现在不少实现只是把对话记录简单归档，充其量是历史消息库，离真正有用的“记忆”还有差距
