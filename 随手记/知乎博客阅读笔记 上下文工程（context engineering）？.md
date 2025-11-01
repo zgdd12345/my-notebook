@@ -15,7 +15,7 @@ prompt engineering 已经不是核心了，context engineering 才是下一阶�
 
 那实际操作中，这些高级的上下文工程到底怎么做？
 
-## **a) [LLM](https://zhida.zhihu.com/search?content_id=265778318&content_type=Article&match_order=1&q=LLM&zhida_source=entity)的特征选择*
+## **a) [LLM](https://zhida.zhihu.com/search?content_id=265778318&content_type=Article&match_order=1&q=LLM&zhida_source=entity)的特征选择**
 
 有个老哥换了个角度看这事儿：其实上下文工程就是传统机器学习里的特征工程，只不过换成了大模型版本。以前搞机器学习，特征工程要干这些活：抽取特征、预处理、构造新特征、筛选降维。现在大模型的各种操作，其实对应的就是这些
 
@@ -44,6 +44,16 @@ prompt engineering 已经不是核心了，context engineering 才是下一阶�
 
 ## **长短期记忆不仅仅是存储**
 
-大模型的记忆问题大模型只有"7秒记忆"，模型窗口长度就是他的记忆空间，给的prompt就是他的全部记忆
+大模型的记忆问题大模型只有"7秒记忆"，<font color="#ffc000">模型窗口长度就是他的记忆空间，给的prompt就是他的全部记忆</font>
 
 很多团队想做“记忆”功能，但这不是随手一加的开关，得有方案设计。要落地，需要同时考虑用户体验、隐私保护和系统架构。现在不少实现只是把对话记录简单归档，充其量是历史消息库，离真正有用的“记忆”还有差距
+![[Pasted image 20251101223124.png]]
+
+要把记忆做好，建议分层设计
+
+- 用户层：记录个人偏好（如图表样式、写作语气）
+- 团队层：沉淀常见问题、常用看板、运行手册
+- 组织层：汇总知识库、规章制度和历史决策
+
+个性化必须是透明的,用户应能清楚看到系统记录了什么，并可随时查看、修改或关闭相关记忆项
+
